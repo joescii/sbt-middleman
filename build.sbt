@@ -1,4 +1,4 @@
-name := "sbt-dependency-range"
+name := "sbt-middleman"
 
 organization := "com.joescii"
 
@@ -9,7 +9,9 @@ scalaVersion := "2.10.4"
 resolvers += "rubygems-release" at "http://rubygems-proxy.torquebox.org/releases"
 
 libraryDependencies ++= Seq(
-  "rubygems" % "middleman" % "3.3.7"
+  "rubygems" % "middleman" % "3.3.7" excludeAll(ExclusionRule("rubygems", "ffi")),
+  "rubygems" % "ffi" % "1.9.3" force(),
+  "rubygems" % "tilt" % "1.4.1" force()
 )
 
 scalacOptions <<= scalaVersion map { v: String =>
