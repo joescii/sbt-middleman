@@ -4,6 +4,7 @@ sbt-middleman
 Attempt at using middleman in sbt
 
 Execute `./sbt` and within the sbt shell, execute:
+
 1. `gemExec bundle install`
 2. `gemExec middleman build`
 
