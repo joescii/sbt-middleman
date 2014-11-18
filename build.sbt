@@ -17,7 +17,7 @@ libraryDependencies ++= Seq(
   "rubygems" % "middleman-blog" % "[3.5.3,)",
   "rubygems" % "middleman-s3_sync" % "[3.0.35,)",
   "rubygems" % "middleman-cloudfront" % "[0.1.0,)",
-  "rubygems" % "middleman-autoprefixer" % "[2.2.2,)",
+  "rubygems" % "middleman-autoprefixer" % "[2.3.0,)",
   "rubygems" % "middleman-s3_redirect" % "[3.0.5,)",
   "rubygems" % "dotenv" % "[1.0.2,)",
   "rubygems" % "minitest" % "5.4.3" force(),
